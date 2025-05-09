@@ -21,9 +21,12 @@ cv.imshow("Rectangle", blank)
 # 3. Draw a circle
 cv.circle(blank, (250,250), 80, (0,0,255), thickness=-1)
 cv.imshow('Circle', blank)
-cv.waitKey(0)
 
 # 4. Draw a line 
-cv.line(blank, (0,0), (250,250), (0,255,0), thickness=cv.FILLED)
+cv.line(blank, (100,50), (250,250), (255,255,255), thickness=3)
 cv.imshow('Line', blank)
+
+# 5. Write text on an image
+
+
 cv.waitKey(0)

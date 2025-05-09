@@ -27,6 +27,7 @@ cv.line(blank, (100,50), (250,250), (255,255,255), thickness=3)
 cv.imshow('Line', blank)
 
 # 5. Write text on an image
-
+cv.putText(blank, 'hello', (225, 225), cv.FONT_HERSHEY_TRIPLEX, 1.0, (0,255,0), 2)
+cv.imshow("Text", blank)
 
 cv.waitKey(0)

@@ -15,4 +15,17 @@ cv.imshow('Blurred Image', blur)
 canny = cv.Canny(img, 125, 175)
 cv.imshow('Canny edges', canny)
 
+# Dilating the image
+dilated = cv.dilate (canny, (7,7), iterations=1)
+cv.imshow("Dilated", dilated)
+
+
+# Eroding
+eroded = cv.erode(dilated, (3,3), iterations=1)
+cv.imshow("Eroded", eroded)
+
+# resize
+resized = cv.resize(img, (500,500))
+cv.imshow('Resized', resized)
+
 cv.waitKey(0)

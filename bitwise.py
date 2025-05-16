@@ -13,5 +13,18 @@ cv.imshow('Circle', circle)
 bitwise_and = cv.bitwise_and(rectangle, circle)
 cv.imshow('Bitwise AND',bitwise_and)
 
+# bitwise OR 
+bitwise_or = cv.bitwise_or(rectangle, circle)
+cv.imshow('Bitwise OR',bitwise_or)
+
+# bitwise XOR (Returns not-intersecting regions)
+bitwise_xor = cv.bitwise_xor(rectangle,circle)
+cv.imshow('Bitwise XOR', bitwise_xor)
+
+# bitwise NOT (Inverts binary color)
+# White <-> Black
+bitwise_not = cv.bitwise_not(rectangle, circle)
+cv.imshow('Bitwise NOT', bitwise_not)
+
 
 cv.waitKey(0)
